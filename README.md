@@ -25,4 +25,5 @@ cd ~/project
 php -S localhost:8000
 ````
 Страница авторизации: http://localhost:8000/
+
 **В файле RegistrationController.php в 25 строке необходимо указать путь до проекта**
