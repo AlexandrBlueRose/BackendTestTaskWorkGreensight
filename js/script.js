@@ -35,7 +35,7 @@ $(document).ready(function () {
         minlength: "Ваш пароль составляет менее 5 символов",
         equalTo: "Пароли должны совпадать"
       },
-      email: "Пожалуйста, укажите email"
+      email: "Пожалуйста, укажите Email"
     },
     errorPlacement: function (error, element) {
       offset = element.offset();
@@ -63,10 +63,10 @@ $(document).ready(function () {
           $('#status').css('display', 'block');
           let message;
           if (data.responseText == 2) {
-            message = 'Валидация данных на сервере прошла с ошибкой, пользователь с указанным Email или имени уже зарегестрирован';
+            message = 'Валидация данных на сервере прошла с ошибкой, пользователь с указанным Email или Именем уже зарегестрирован';
           }
           else if (data.responseText == 3) {
-            message = 'Валидация данных на сервере прошла с ошибкой, пожалуйста, проверьте указанный пароль и Email на соответствие формату ...@...';
+            message = 'Валидация данных на сервере прошла с ошибкой, пожалуйста, проверьте указанный пароль(пароль и повтор пароля должны совпадать) и Email на соответствие формату ...@...';
           }
           $('#status').html('<div class="alert alert-danger" role="alert">'
             + message
